@@ -17,11 +17,6 @@ header{
     background: rgba(0, 0, 0, 0.5);
 }
 
-.banner {
-    width: 100%;
-    z-index: -1;
-    position: relative;
-}
 
 header div {
     width: 80%;
@@ -35,7 +30,7 @@ header div {
 .nav-top a {
     color: white;
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
 }
 
 a:hover {
@@ -58,13 +53,13 @@ a + a {
 
 h2 {
     margin: 0;
+    font-size: 2rem;
 }
 
 h1 {
     margin: 0;
     max-width: 400px;
     min-width: 50%;
-
     text-transform: uppercase;
     font-weight: 300;
     font-size: 3rem;
@@ -97,7 +92,7 @@ h1 {
 
 .filter {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 10rem 0 5rem 0;
 }
@@ -108,24 +103,6 @@ h3 {
     margin: 0;
 }
 
-.see-all {
-    font-family: 'Alata', sans-serif;
-    letter-spacing: .25rem;
-    font-weight: 600;
-    background-color: white;
-    padding: .5rem 2rem;
-    border: 3px solid hsl(0, 0%, 55%);
-}
-
-.see-all:hover {
-    cursor: pointer;
-}
-
-.see-all:active {
-    background-color: black;
-    color: white;
-    border:none;
-}
 
 .fotos {
     display: grid;
@@ -183,13 +160,10 @@ h4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("./images/desktop/image-fisheye.jpg");
 }
 
-.filter-btm, .see-all-btm {
-    display: none;
-}
 
 footer {
-    margin-top: 10rem; /*-------------TEST until main content filled in----------*/
-    background-color: black;
+    margin-top: 10rem; 
+    background: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
@@ -222,7 +196,7 @@ footer a {
 }
 
 .copyright {
-    color: hsl(0, 0%, 55%);
+    color: white;
 
 }
 
@@ -238,6 +212,14 @@ footer a {
 }
 
 @media (max-width: 900px) {
+
+    
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
     .leader {
         display: flex;
         flex-direction: column;
@@ -256,6 +238,14 @@ footer a {
 }
 
 @media (max-width: 720px) {
+
+    
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
     .filter {
         display: flex;
         justify-content: center;
@@ -276,34 +266,22 @@ footer a {
         background-size: cover;
     }
 
-    .filter-btm {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .see-all-btm {
-        display: block;
-            font-family: 'Alata', sans-serif;
-            letter-spacing: .25rem;
-            font-weight: 600;
-            background-color: white;
-            padding: .5rem 2rem;
-            border: 3px solid hsl(0, 0%, 55%);
-        }
-        
-        .see-all:hover {
-            cursor: pointer;
-        }
-        
-        .see-all:active {
-            background-color: black;
-            color: white;
-            border:none;
-        }
-
 }
 @media (max-width: 575px) {
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+    .nav-top {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .footer-div,
     .left,
     .right,
@@ -327,41 +305,28 @@ footer a {
     }
 }
 
-@media (max-width: 500px) {
-    .nav-top {
-        display: none;
-    }
 
-    .hamburger {
-        display: block;
-    }
-}
 
 @media (max-width: 460px) {
-    main {
-        margin: 0 2rem;
-    }
-
+    
+main {
+    margin: 0 auto;
+    width: 80%;
+}
 
     .hamburger {
         display: block;
     }
 
-    .filter {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .see-all {
-        display: none;
+    header {
+        width: 100%;
     }
 
     .fotos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        gap: 2rem;
+        row-gap: 2rem;
     }
 
     .foto {
@@ -408,31 +373,6 @@ footer a {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("./images/mobile/image-fisheye.jpg");
     }
 
-    .filter-btm {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .see-all-btm {
-        display: block;
-            font-family: 'Alata', sans-serif;
-            letter-spacing: .25rem;
-            font-weight: 600;
-            background-color: white;
-            padding: .5rem 2rem;
-            border: 3px solid hsl(0, 0%, 55%);
-        }
-        
-        .see-all:hover {
-            cursor: pointer;
-        }
-        
-        .see-all:active {
-            background-color: black;
-            color: white;
-            border:none;
-        }
 
         .footer-div,
         .left,
