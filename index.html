@@ -10,19 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Loopstudios landing page</title>
+  <title>klax-KMU Landingpages</title>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="top">
-        <h2 class="logo">klax KMU</h2>
-        <img src="./images/icon-hamburger.svg" alt="hamburger menu" class="hamburger">
-        <nav class="nav-top">
-          <a href="#">Angebot & Preise</a>
-          <a href="#">Kreationen</a>
-          <a href="#">Kontakt</a>
+      <div class="header__top">
+        <h2 class="header__top__logo">klax KMU</h2>
+        <img src="./images/icon-hamburger.svg" alt="hamburger menu" class="header__top__hamburger">
+        <nav class="header__top__nav">
+          <a href="#pricing" class="nav-link">Angebot & Preise</a>
+          <a href="#references" class="nav-link">Kreationen</a>
+          <a href="#contact" class="nav-link">Kontakt</a>
         </nav>
       </div>
       <div class="heading">
@@ -31,41 +31,42 @@
     </header>
     <main>
       <section class="leader">
-        <img class="interactivity" src="./images/desktop/igor-miske-JVSgcV8_vb4-unsplash.jpg" alt="computer on desk">
-        <div class="interactivity-text">
+        <img class="leader__interactivity" src="./images/desktop/igor-miske-JVSgcV8_vb4-unsplash.jpg"
+          alt="computer on desk">
+        <div class="leader__interactivity-text">
           <h3>MODERNE <br> LANDINGPAGES</h3>
           <p>Mit unseren Angeboten helfen wir Ihnen dabei, Ihren <br>
             Web-Auftritt auf die aktuellen technischen Standards anzupassen. <br>
             Kontaktieren Sie uns gerne für eine kostenlose und unverbindliche Offerte.</p>
         </div>
       </section>
-      <section class="prices">
-        <div class="filter">
+      <section class="prices" id="pricing">
+        <div class="prices__filter">
           <h3>Pakete & Preise</h3>
         </div>
         <div class="packages">
-          <div class="package basis">
-            <img src="./images/illustrations/mobile.svg" alt="mobilephone" class="device">
-            <h5 class="package-title">BASIS</h5>
-            <h6 class="delivery">Lieferzeit:</h6>
-            <h6 class="delivery">"Standard": 21 Tage (kostenlos)</h6>
-            <h6 class="delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
-            <p class="price"><span class="chf">chf</span>1'799.-</p>
-            <ul class="package-content">
+          <div class="package basic">
+            <img src="./images/illustrations/mobile.svg" alt="mobilephone" class="package__device">
+            <h5 class="package__title">BASIS</h5>
+            <h6 class="package__delivery">Lieferzeit:</h6>
+            <h6 class="package__delivery">"Standard": 21 Tage (kostenlos)</h6>
+            <h6 class="package__delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
+            <p class="package__price"><span class="package__chf">chf</span>1'799.-</p>
+            <ul class="package__content">
               <li>Responsive design</li>
               <li>Bilder und Text nach Wunsch</li>
               <li>Social media links</li>
               <li>Anzahl Sektionen: 5</li>
             </ul>
           </div>
-          <div class="package profi">
-            <img src="./images/illustrations/mobile-tablet.svg" alt="mobilephone and tablet" class="device">
-            <h5 class="package-title">PROFI</h5>
-            <h6 class="delivery">Lieferzeit:</h6>
-            <h6 class="delivery">"Standard": 21 Tage (kostenlos)</h6>
-            <h6 class="delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
-            <p class="price"><span class="chf">chf</span>1'999.-</p>
-            <ul class="package-content">
+          <div class="package prof">
+            <img src="./images/illustrations/mobile-tablet.svg" alt="mobilephone and tablet" class="package__device">
+            <h5 class="package__title">PROFI</h5>
+            <h6 class="package__delivery">Lieferzeit:</h6>
+            <h6 class="package__delivery">"Standard": 21 Tage (kostenlos)</h6>
+            <h6 class="package__delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
+            <p class="package__price"><span class="package__chf">chf</span>1'999.-</p>
+            <ul class="package__content">
               <li>Responsive design</li>
               <li>Bilder und Text nach Wunsch</li>
               <li>Social media links</li>
@@ -73,14 +74,15 @@
               <li>+ Erstellung Firmenlogo</li>
             </ul>
           </div>
-          <div class="package experte">
-            <img src="./images/illustrations/mobile-tablet-desk.svg" alt="mobilephone, tablet and desk" class="device">
-            <h5 class="package-title">EXPERTE</h5>
-            <h6 class="delivery">Lieferzeit:</h6>
-            <h6 class="delivery">"Standard": 21 Tage (kostenlos)</h6>
-            <h6 class="delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
-            <p class="price">auf Anfrage</p>
-            <ul class="package-content">
+          <div class="package expert">
+            <img src="./images/illustrations/mobile-tablet-desk.svg" alt="mobilephone, tablet and desk"
+              class="package__device">
+            <h5 class="package__title">EXPERTE</h5>
+            <h6 class="package__delivery">Lieferzeit:</h6>
+            <h6 class="package__delivery">"Standard": 21 Tage (kostenlos)</h6>
+            <h6 class="package__delivery">"Express": 7 Tage (zzgl. chf 399.-)</h6>
+            <p class="package__price">auf Anfrage</p>
+            <ul class="package__content">
               <li>Responsive design</li>
               <li>Bilder und Text nach Wunsch</li>
               <li>Social media links</li>
@@ -91,50 +93,47 @@
           </div>
         </div>
       </section>
-      <section class="creations">
-        <div class="filter">
+      <section class="creations" id="references">
+        <div class="creations__header">
           <h3>unsere Kreationen</h3>
         </div>
-        <div class="fotos">
-          <div class="foto deep-earh">
+        <div class="creations__fotos">
+          <div class="creations__foto deep-earth">
             <h4>DEEP <br> EARTH</h4>
           </div>
-          <div class="foto night-arcade">
+          <div class="creations__foto night-arcade">
             <h4>NIGHT <br> ARCADE</h4>
           </div>
-          <div class="foto soccer-team">
+          <div class="creations__foto soccer-team">
             <h4>SOCCER <br> TEAM VR</h4>
           </div>
-          <div class="foto the-grid">
+          <div class="creations__foto the-grid">
             <h4>THE <br> GRID</h4>
           </div>
-          <div class="foto above">
-            <h4>FROM UP <br> ABOVE VR</h4>
-          </div>
-          <div class="foto pocket-borealis">
-            <h4>POCKET <br> BOREALIS</h4>
-          </div>
-          <div class="foto curiosity">
-            <h4>THE <br> CURIOSITY</h4>
-          </div>
-          <div class="foto fisheye">
-            <h4>MAKE IT <br> FISHEYE</h4>
-          </div>
         </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="questions">
+          <h3>Kontakt</h3>
+          <p>Haben Sie Fragen? Senden Sie uns eine <strong>Email an info@klax-kmu.ch</strong> oder klicken Sie auf das
+            nachfolgende Symbol.</p>
+        </div>
+        <a href="mailto: info@klax-kmu.ch"><img src="./images/illustrations/email.svg" alt="Email Icon"
+            class="contact__email"></a>
       </section>
     </main>
     <footer>
       <div class="footer-div">
-        <div class="left">
-          <h2 class="logo-bottom">klax KMU</h2>
-          <nav class="nav-bottom">
-            <a href="#">Angebot & Preise</a>
-            <a href="#">Kreationen</a>
-            <a href="#">Kontakt</a>
+        <div class="footer-div__left">
+          <h2 class="footer-div__left__logo-bottom">klax KMU</h2>
+          <nav class="footer-div__left__nav-bottom">
+            <a href="#pricing" class="nav-link">Angebot & Preise</a>
+            <a href="#references" class="nav-link">Kreationen</a>
+            <a href="#contact" class="nav-link">Kontakt</a>
           </nav>
         </div>
 
-        <div class="right">
+        <div class="footer-div__right">
           <!--
           <div class="socials">
             <img src="./images/icon-facebook.svg" alt="facebook-logo">
@@ -143,7 +142,7 @@
             <img src="./images/icon-instagram.svg" alt="instagram-logo">
           </div>
         -->
-          <h6 class="copyright">© 2021 klax KMU. All rights reserved.</h6>
+          <h6 class="footer-div__left__copyright">© 2021 klax KMU. All rights reserved.</h6>
         </div>
       </div>
     </footer>
