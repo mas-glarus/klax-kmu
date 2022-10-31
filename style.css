@@ -378,15 +378,13 @@ footer {
         align-items: center;
     }
 
-}
-
-@media (max-width: 800px) {
     .creations__fotos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows:  repeat(2, 1fr);
         gap: 2rem;
     }
+
 }
 
 @media (max-width: 600px) {
