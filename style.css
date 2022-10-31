@@ -1,5 +1,5 @@
 html, body {
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Alata', sans-serif;
@@ -7,7 +7,7 @@ html, body {
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -67,8 +67,9 @@ h1 {
 
 .leader {
     display: flex;
-    margin-top: 7rem;
     position: relative;
+    width: 90%;
+    margin: 7rem auto 0 auto;
 }
 
 .interactivity {
@@ -79,7 +80,7 @@ h1 {
     padding: 5rem 0 0 5rem;
     position: absolute;
     background-color: white;
-    bottom: 0;
+    bottom: -2px;
     right: 0;
 }
 
@@ -88,6 +89,67 @@ h1 {
     line-height: 150%;
     font-weight: 600;
     color: hsl(0, 0%, 55%);
+}
+
+.packages {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+margin: 0 auto;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    width: 30%;
+    padding: 2rem 0 2rem 0;
+}
+
+.device {
+    height: 8rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+h5 {
+    margin: 3rem auto 1.5rem auto;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.delivery {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.chf {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    margin: 3rem 0 0 0;
+}
+
+.package-content {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+li {
+    font-size: 1.25rem;
+}
+
+li + li {
+    margin-top: 1rem;
 }
 
 .filter {
@@ -115,6 +177,7 @@ h3 {
     height: 30rem;
     display: flex;
     align-items: flex-end;
+    background-size: cover;
 }
 
 .foto:hover {
@@ -216,7 +279,7 @@ footer a {
     
 main {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -235,6 +298,19 @@ main {
         right: 0;
         text-align: center;
     }
+
+    .packages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .package {
+        width: 60%;
+    }
+
+    .package + .package {
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 720px) {
@@ -245,6 +321,16 @@ main {
     width: 80%;
 }
 
+.interactivity {
+    max-width: 100%;
+}
+
+.packages {
+    width: 100%;
+        }
+        .package {
+            width: 100%;
+        }
 
     .filter {
         display: flex;
@@ -281,6 +367,17 @@ main {
     .hamburger {
         display: block;
     }
+
+    .interactivity {
+        max-width: 100%;
+    }
+
+    .packages {
+        width: 100%;
+            }
+            .package {
+                width: 100%;
+            }
 
     .footer-div,
     .left,
@@ -320,6 +417,26 @@ main {
 
     header {
         width: 100%;
+    }
+
+    .leader {
+        width: 100%;
+        margin: 7rem auto;
+    }
+
+    .interactivity {
+        max-width: 100%;
+    }
+
+    .packages {
+width: 100%;
+    }
+    .package {
+        width: 100%;
+    }
+
+    .filter h3{
+        text-align: center;
     }
 
     .fotos {
