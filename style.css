@@ -1,5 +1,5 @@
 html, body {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Alata', sans-serif;
@@ -11,7 +11,13 @@ html, body {
     margin: 0 auto;
 }
 
+main {
+    width: 80%;
+     margin: 0 auto;
+}
+
 header{
+    width: 100%;
     min-height: 25rem;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -125,7 +131,7 @@ h5 {
 
 .delivery {
     margin: 0;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 300;
 }
 
@@ -276,13 +282,18 @@ footer a {
 
 @media (max-width: 900px) {
 
-    
 main {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
+.nav-top {
+    display: none;
+}
 
+.hamburger {
+    display: block;
+}
     .leader {
         display: flex;
         flex-direction: column;
@@ -315,11 +326,12 @@ main {
 
 @media (max-width: 720px) {
 
-    
 main {
     margin: 0 auto;
     width: 80%;
 }
+
+
 
 .interactivity {
     max-width: 100%;
@@ -352,33 +364,6 @@ main {
         background-size: cover;
     }
 
-}
-@media (max-width: 575px) {
-
-main {
-    margin: 0 auto;
-    width: 80%;
-}
-
-    .nav-top {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .interactivity {
-        max-width: 100%;
-    }
-
-    .packages {
-        width: 100%;
-            }
-            .package {
-                width: 100%;
-            }
-
     .footer-div,
     .left,
     .right,
@@ -400,6 +385,29 @@ main {
     .right {
         margin: 1rem auto;
     }
+}
+
+@media (max-width: 575px) {
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+    .interactivity {
+        max-width: 100%;
+    }
+
+    .packages {
+        width: 100%;
+            }
+            .package {
+                width: 100%;
+            }
+
+
 }
 
 
