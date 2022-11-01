@@ -191,6 +191,12 @@ h3 {
 .package__content {
     list-style: none;
     margin-top: 3rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.package__content__item + .package__content__item {
+    margin-top: 1rem;
 }
 
 li {
