@@ -430,6 +430,7 @@ footer {
     .header__top__nav ul {
         width: 100%;
         flex-direction: column;
+        padding: 0;
     }
 
     .header__top__nav ul li {
