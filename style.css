@@ -35,6 +35,7 @@ header {
 .header__top__logo {
     margin: 3rem 0;
     font-size: 2rem;
+    user-select: none;
 }
 
 .header__top__hamburger {
@@ -91,6 +92,7 @@ header {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 3rem;
+    user-select: none;
 }
 
 /*----- Main part -----*/
@@ -139,6 +141,7 @@ h3 {
     font-size: 3rem;
     font-weight: 500;
     margin: 0;
+    padding-top: 2rem;
 }
 
 .packages {
@@ -259,6 +262,17 @@ opacity: .5;
 
 .questions p {
     margin: 4rem auto;
+    line-height: 150%;
+}
+
+.questions a {
+    text-decoration: none;
+    color: black;
+}
+
+.questions a:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
 }
 
 
@@ -298,16 +312,26 @@ footer {
 .footer-div__left__logo-bottom {
     margin: 1rem 0;
     font-size: 1.5rem;
+    user-select: none;
 }
 
 .footer-div__left__nav-bottom {
     font-size: 1rem;
 }
 
-.footer-div__left__nav-bottom a {
+.nav-link {
     color: var(--main-color);
     text-decoration: none;
     font-size: .75rem;
+}
+
+.nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: .25rem;
 }
 
 .footer-div__right {
@@ -318,6 +342,7 @@ footer {
 
 .footer-div__left__copyright {
     color: var(--main-color);
+    user-select: none;
 }
 
 /*
@@ -349,7 +374,7 @@ footer {
     }
 
     .package {
-        width: 75%;
+        width: 80%;
         min-height: 35rem;
         margin-bottom: 3rem;
     }
@@ -377,6 +402,11 @@ footer {
         position: static;
         width: 80%;
         margin: 4rem auto 0 auto;
+    }
+
+    .package,
+    .creations {
+        width: 80%;
     }
 
     .leader__interactivity {
@@ -456,7 +486,7 @@ footer {
 
     .package,
     .creations {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -491,4 +521,17 @@ footer {
         font-size: 2rem;
     }
 
+}
+
+@media (max-width: 360px) {
+    .footer-div__left__nav-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link + .nav-link{
+        margin: 1rem 0 0 0;
+
+    }
 }
